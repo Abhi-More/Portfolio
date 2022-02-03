@@ -1,0 +1,135 @@
+
+.top{
+    display: flex;
+    margin: 10px;
+    justify-content: flex-start;
+}
+.top .profile{
+    width: 250px;
+    height: 250px;
+}
+.top .profile img{
+    width: 220px;
+    height: 220px;
+    text-align: center;
+}
+.top .intro{
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.top .intro .name{
+    font-size: 25px;
+}
+.top .intro .media{
+    display: flex;
+    justify-content: space-between;
+}
+.top .intro .media .element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top .intro .media .element .logo{
+    width: 30px;
+    height: 30px;
+}
+.top .intro .media .element .logo img{
+    width: 25px;
+    height: 25px;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
+}
+
+
+h3{
+    font-size: 30px;
+}
+
+.background ul{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.background ul li ul{
+    list-style: none;
+    font-weight:normal;
+}
+
+.skill ul{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.skill ul li ul{
+    font-weight:normal;
+}
+
+.certificates ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+}
+.certificates ul li div img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.foot{
+    height: 50px;
+    background-color: rgb(82, 100, 81);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot .element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot .element .logo{
+    width: 30px;
+    height: 30px;
+}
+.foot .element .logo img{
+    width: 25px;
+    height: 25px;
+}
+.foot .element div a{
+    color: white;
+}
+
+@media screen and (max-width:800px)
+{
+    *{
+        font-size: 3vw;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+    .top .profile{
+        width: 50vh;
+        height: auto;
+    }
+    .top .profile img{
+        width: 40vw;
+        height: auto;
+    }
+    .top .intro{
+        line-height: 5vw;
+        font-weight: bold;
+    }
+    .top .intro .name{
+        font-size: 3.5vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+}
