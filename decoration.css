@@ -129,6 +129,15 @@ h3{
     .top .intro .name{
         font-size: 3.5vw;
     }
+    .top .intro .media .element .logo{
+        height: 5vw;
+        width: 5vw;
+    }
+    .top .intro .media .element .logo img{
+        height: 4vw;
+        width: auto;
+    }
+    
     h3{
         font-size: 4vw;
     }
