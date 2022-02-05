@@ -1,16 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .top{
     display: flex;
-    margin: 10px;
+    margin: 10px auto -38px auto;
     justify-content: flex-start;
 }
 .top .profile{
     width: 250px;
     height: 250px;
+    margin-left: 10px
 }
 .top .profile img{
+    box-shadow: 5px 8px 5px rgb(87, 87, 87);
     width: 220px;
     height: 220px;
+    border: 1px solid orange;
     text-align: center;
 }
 .top .intro{
@@ -40,14 +47,14 @@
 }
 
 hr{
-    margin: 0;
-    padding: 0;
+    margin: -25px auto -8px auto;
     opacity: 0.5;
 }
 
 
 h3{
     font-size: 30px;
+    padding-left: 8px;
 }
 
 .background ul{
@@ -81,6 +88,10 @@ h3{
     margin-right: 10px;
 }
 
+.contact .phone{
+    font-size: 15px;
+}
+
 .foot{
     height: 50px;
     background-color: rgb(82, 100, 81);
@@ -108,9 +119,12 @@ h3{
 @media screen and (max-width:800px)
 {
     *{
-        font-size: 3vw;
+        line-height: 6vw;
+        font-size: 3.5vw;
     }
     .top{
+        
+        margin: 10px auto auto auto;
         display: flex;
         flex-direction: column;
     }
@@ -123,11 +137,14 @@ h3{
         height: auto;
     }
     .top .intro{
-        line-height: 5vw;
+        padding: 3vw;
         font-weight: bold;
     }
     .top .intro .name{
-        font-size: 3.5vw;
+        font-size: 4vw;
+    }
+    .top .intro .media{
+        margin-top: 3vw;
     }
     .top .intro .media .element .logo{
         height: 5vw;
@@ -137,8 +154,28 @@ h3{
         height: 4vw;
         width: auto;
     }
+
+    div ul{
+        padding-left: 10vw;
+    }
+    div ul li ul{
+        padding-left: 5vw;
+    }
+    
+    hr{
+        margin: -13px auto auto;
+        opacity: 0.5;
+    }
     
     h3{
-        font-size: 4vw;
+        font-size: 5vw;
+    }
+    .foot .element .logo{
+        height: 5vw;
+        width: 5vw;
+    }
+    .foot .element .logo img{
+        width: 4vw;
+        height: auto;
     }
 }
